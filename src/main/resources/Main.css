@@ -1,0 +1,51 @@
+* {
+    -fx-primary: #151320;
+    -fx-secondary: #FFFF8D;
+    -fx-header: #181822;
+    -fx-sidebar: #0e0c1a;
+    -fx-primarytext: #FFFFFF;
+    -fx-primarytextgrey: #676771;
+
+}
+
+.root {
+    -fx-background-color: -fx-primary;
+    -fx-font-family: "Arial Black";
+    -fx-background-radius: 10 10 10 10;
+    -fx-border-radius: 18 18 18 18;
+}
+
+#header {
+    -fx-background-color: -fx-header;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-background-radius: 8 8 8 8;
+    -fx-padding: 10 0 10 0;
+}
+
+.jfx-text-field {
+    -fx-text-fill: -fx-primarytext;
+}
+
+.tab {
+    -fx-background-color: -fx-sidebar;
+    -fx-padding: 70 20 0 0;
+}
+
+.tab-header-background {
+    -fx-background-color: -fx-sidebar;
+}
+
+.tab-label {
+    -fx-text-fill: -fx-primarytext;
+    -fx-rotate: 90;
+}
+.tab-pane {
+    -fx-background-color: -fx-primary;
+}
+
+
+#logoText {
+    -fx-text-fill: -fx-primarytext;
+    -fx-font-size: 20px;
+    -fx-padding: 0 0 0 20;
+}

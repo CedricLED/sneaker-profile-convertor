@@ -1,0 +1,26 @@
+#addProxiesButton {
+    -fx-text-fill: white;
+    -fx-background-color: #f20463 to #de1243;
+    -fx-padding: 12px;
+    -fx-background-radius: 8px;
+    -fx-border-insets: 8px;
+    -fx-background-insets: 8px;
+}
+
+#testProxiesButton {
+    -fx-text-fill: white;
+    -fx-background-color: #1bd003 to #12de25;
+    -fx-padding: 12px;
+    -fx-background-radius: 5px;
+    -fx-border-insets: 8px;
+    -fx-background-insets: 8px;
+}
+
+#clearAllButton {
+    -fx-text-fill: white;
+    -fx-background-color: #f20463 to #de1243;
+    -fx-padding: 12px;
+    -fx-background-radius: 8px;
+    -fx-border-insets: 8px;
+    -fx-background-insets: 8px;
+}

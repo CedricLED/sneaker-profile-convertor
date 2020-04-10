@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<VBox alignment="CENTER" stylesheets="@Settings.css" xmlns="http://javafx.com/javafx/8.0.172-ea"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.profileconverter.settingsController">
+    <children>
+        <Label text="Settings"/>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+            <children>
+                <JFXTextField disable="true"/>
+                <JFXTextField disable="true"/>
+                <JFXTextField disable="true"/>
+                <JFXButton mnemonicParsing="false" text="DEACTIVATE KEY"/>
+                <JFXButton mnemonicParsing="false" text="Check for Updates"/>
+            </children>
+        </VBox>
+    </children>
+</VBox>

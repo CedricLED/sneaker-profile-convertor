@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<VBox alignment="CENTER" stylesheets="@ProxyGenerator.css" xmlns="http://javafx.com/javafx/8.0.172-ea"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.profileconverter.proxyGeneratorController">
+    <children>
+        <Label text="Proxy Generator"/>
+        <HBox fx:id="options" alignment="CENTER" prefHeight="147.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+            <children>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <JFXComboBox prefWidth="150.0"/>
+                        <JFXTextField promptText="API Key"/>
+                        <JFXTextField promptText="User"/>
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <JFXComboBox prefWidth="150.0"/>
+                        <JFXTextField promptText="Quantity"/>
+                        <JFXTextField promptText="Pass"/>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <JFXTextArea fx:id="information" disable="true" prefHeight="200.0" prefWidth="200.0"/>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <JFXButton fx:id="create" mnemonicParsing="false" text="CREATE PROXIES"/>
+                <JFXButton fx:id="copy" mnemonicParsing="false" text="COPY TO CLIPBOARD"/>
+                <JFXButton fx:id="clear" mnemonicParsing="false" text="CLEAR PROXIES"/>
+            </children>
+        </HBox>
+    </children>
+</VBox>

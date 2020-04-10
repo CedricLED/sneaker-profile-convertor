@@ -1,0 +1,55 @@
+buildscript {
+    dependencies {
+        classpath group: 'de.dynamicfiles.projects.gradle.plugins', name: 'javafx-gradle-plugin', version: '8.8.2'
+    }
+    repositories {
+        mavenLocal()
+        mavenCentral()
+
+    }
+}
+
+plugins {
+    id 'groovy'
+    id 'java'
+}
+
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+apply plugin: 'javafx-gradle-plugin'
+
+jfx {
+    // minimal requirement for jfxJar-task
+    mainClass = 'com.example.profileconverter.Main'
+
+    // minimal requirement for jfxNative-task
+    vendor = 'ARK17, LLC'
+}
+
+dependencies {
+    compile(
+            'org.codehaus.groovy:groovy-all:2.4.11',
+            'com.googlecode.json-simple:json-simple:1.1.1',
+            'com.jfoenix:jfoenix:8.0.8',
+            'com.mashape.unirest:unirest-java:1.4.9',
+            'com.opencsv:opencsv:4.4'
+    )
+    implementation(
+            'com.github.afester.javafx:FranzXaver:0.1',
+            'de.jensd:fontawesomefx:8.9',
+            'org.json:json:20180813'
+    )
+    testCompile(
+            'junit:junit:4.12',
+            'org.codehaus.groovy:groovy-all:2.4.11',
+            'org.spockframework:spock-core:1.1-groovy-2.4',
+            'org.testfx:testfx-spock:4.0.15-alpha'
+    )
+}

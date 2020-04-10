@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<VBox alignment="CENTER" stylesheets="@AccountGenerator.css" prefHeight="400.0" prefWidth="600.0"
+      xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.profileconverter.accountGeneratorController">
+    <children>
+        <Label text="Account Generator"/>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <JFXComboBox prefWidth="150.0"/>
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="100.0" prefWidth="166.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <JFXTextField promptText="2Captcha API Key"/>
+                        <JFXTextField promptText="AntiCaptcha API Key"/>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Label text="Catchall:"/>
+                <JFXTextField/>
+            </children>
+        </HBox>
+        <JFXButton mnemonicParsing="false" text="CREATE ACCOUNTS"/>
+        <JFXButton mnemonicParsing="false" text="EXPORT ACCOUNTS"/>
+    </children>
+</VBox>

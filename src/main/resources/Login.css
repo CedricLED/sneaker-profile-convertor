@@ -1,0 +1,36 @@
+* {
+    -fx-primary: #151320;
+    -fx-secondary: #f20463;
+    -fx-primarytext: #FFFFFF;
+    -fx-primarytextgrey: #676771;
+}
+
+.root {
+    -fx-background-color: -fx-primary;
+    -fx-font-family: "Arial Black";
+    -fx-background-radius: 8 8 8 8;
+    -fx-border-radius: 18 18 18 18;
+    -fx-font-smoothing-type: gray;
+}
+
+#licenseKeyTextField {
+    -fx-background-color: rgb(57,55,66);
+    -fx-text-fill: -fx-primarytext;
+    -fx-prompt-text-fill: -fx-primarytextgrey;
+}
+
+#toolsifyLabel {
+    -fx-text-fill: -fx-primarytext;
+    -fx-font-size: 30px;
+}
+
+#helpLabel {
+    -fx-text-fill: -fx-primarytextgrey;
+    -fx-font-size: 15px;
+}
+
+#loginButton {
+    -fx-background-color: -fx-secondary, #de1243;
+    -fx-background-radius: 8,7,6;
+    -fx-text-fill: -fx-primarytext;
+}

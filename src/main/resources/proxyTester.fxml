@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<VBox stylesheets="@ProxyTester.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.profileconverter.proxyTesterController">
+    <JFXTreeTableView fx:id="proxyTableView" editable="true" prefHeight="371.0" prefWidth="600.0">
+        <columns>
+            <JFXTreeTableColumn text="IP"/>
+            <JFXTreeTableColumn text="PORT"/>
+            <JFXTreeTableColumn text="USER"/>
+            <JFXTreeTableColumn text="PASSWORD"/>
+            <JFXTreeTableColumn text="WEBSITE"/>
+            <JFXTreeTableColumn text="SPEED"/>
+            <JFXTreeTableColumn text="ACTION"/>
+        </columns>
+        <columnResizePolicy>
+            <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+        </columnResizePolicy>
+    </JFXTreeTableView>
+    <HBox prefHeight="50.0" prefWidth="600.0">
+        <children>
+            <JFXButton fx:id="addProxiesButton" mnemonicParsing="false" text="ADD PROXIES"/>
+            <JFXButton fx:id="testProxiesButton" mnemonicParsing="false" text="TEST PROXIES"/>
+            <JFXComboBox fx:id="proxySiteSelector" prefWidth="150.0"/>
+            <JFXButton fx:id="clearAllButton" mnemonicParsing="false" text="CLEAR ALL"/>
+        </children>
+    </HBox>
+</VBox>

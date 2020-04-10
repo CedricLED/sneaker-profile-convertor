@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="520.0" prefWidth="700.0" stylesheets="@Main.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.profileconverter.mainController">
+    <children>
+        <HBox id="header" alignment="CENTER" prefHeight="15.0" prefWidth="600.0">
+            <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="41.0" prefWidth="513.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <Label fx:id="logoText" text="TEST" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_RIGHT" prefHeight="41.0" prefWidth="488.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <JFXButton fx:id="minimizeApplication" mnemonicParsing="false" onAction="#minimizeApplication" text="">
+                            <HBox.margin>
+                                <Insets right="3.0" />
+                            </HBox.margin>
+                            <padding>
+                                <Insets left="5.0" right="5.0" top="15.0" />
+                            </padding>
+                        </JFXButton>
+                        <JFXButton fx:id="maximizeApplication" mnemonicParsing="false" onAction="#maximizeApplication" text="" />
+                        <JFXButton fx:id="closeApplication" mnemonicParsing="false" onAction="#closeApplication" text="">
+                            <HBox.margin>
+                                <Insets right="10.0" top="10.0" />
+                            </HBox.margin>
+                            <padding>
+                                <Insets bottom="5.0" />
+                            </padding>
+                        </JFXButton>
+                    </children>
+                </HBox>
+            </children>
+        </HBox>
+        <HBox prefHeight="347.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+            <children>
+                <JFXTabPane fx:id="tabpane" prefHeight="0.0" prefWidth="600.0" rotateGraphic="true" side="LEFT" tabClosingPolicy="UNAVAILABLE" HBox.hgrow="ALWAYS">
+                    <Tab fx:id="settingsTab" closable="false" disable="true">
+                        <fx:include fx:id="settings" source="settings.fxml" />
+                    </Tab>
+                    <Tab fx:id="profileConverterTab" closable="false">
+                        <fx:include fx:id="profileConverter" source="profileConverter.fxml" />
+                    </Tab>
+                    <Tab fx:id="proxyTesterTab" closable="false" disable="true">
+                        <fx:include fx:id="proxyTester" source="proxyTester.fxml" />
+                    </Tab>
+                    <Tab fx:id="proxyGeneratorTab" closable="false" disable="true">
+                        <fx:include fx:id="proxyGenerator" source="proxyGenerator.fxml" />
+                    </Tab>
+                    <Tab fx:id="accountGeneratorTab" closable="false" disable="true">
+                        <fx:include fx:id="accountGenerator" source="accountGenerator.fxml" />
+                    </Tab>
+                </JFXTabPane>
+            </children>
+        </HBox>
+    </children>
+</VBox>

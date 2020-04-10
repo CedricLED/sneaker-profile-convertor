@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<HBox fx:id="profileConverterPane" alignment="CENTER" stylesheets="@ProfileConverter.css"
+      xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.profileconverter.profileConverterController">
+    <VBox HBox.hgrow="ALWAYS">
+        <padding>
+            <Insets right="50.0"/>
+        </padding>
+    </VBox>
+    <VBox alignment="CENTER" HBox.hgrow="ALWAYS">
+        <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                <children>
+                    <Label fx:id="profileConverterLabel" text="Profile Converter"/>
+                </children>
+            </HBox>
+            <HBox alignment="CENTER">
+                <children>
+                    <JFXComboBox fx:id="exportChooser" maxWidth="1.7976931348623157E308" promptText="Convert To"
+                                 HBox.hgrow="ALWAYS">
+                        <HBox.margin>
+                            <Insets top="50.0"/>
+                        </HBox.margin>
+                    </JFXComboBox>
+                </children>
+            </HBox>
+            <HBox>
+                <children>
+                    <JFXTextField fx:id="fileNameTextField" promptText="File Name Without Extension"/>
+                    <Label fx:id="exportFileLabel"/>
+                    <JFXButton fx:id="saveAsButton" mnemonicParsing="false" onAction="#saveAsFile"
+                               text="Save Directory"/>
+                </children>
+                <VBox.margin>
+                    <Insets top="50.0"/>
+                </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                <children>
+                    <HBox>
+                        <children>
+
+                            <Label fx:id="importLabel"/>
+                            <JFXButton fx:id="importButton" alignment="CENTER" mnemonicParsing="false"
+                                       onAction="#importFile" ripplerFill="#f20463" text="IMPORT"/>
+                        </children>
+                        <opaqueInsets>
+                            <Insets/>
+                        </opaqueInsets>
+                        <HBox.margin>
+                            <Insets/>
+                        </HBox.margin>
+                        <padding>
+                            <Insets right="10.0"/>
+                        </padding>
+                    </HBox>
+                    <HBox>
+                        <children>
+                            <JFXButton fx:id="exportButton" alignment="CENTER" mnemonicParsing="false"
+                                       onAction="#convert" ripplerFill="#f00563" text="EXPORT"/>
+                        </children>
+                        <opaqueInsets>
+                            <Insets/>
+                        </opaqueInsets>
+                        <padding>
+                            <Insets left="10.0"/>
+                        </padding>
+                    </HBox>
+                </children>
+                <VBox.margin>
+                    <Insets top="50.0"/>
+                </VBox.margin>
+            </HBox>
+        </children>
+    </VBox>
+    <VBox HBox.hgrow="ALWAYS">
+        <padding>
+            <Insets left="50.0"/>
+        </padding>
+    </VBox>
+</HBox>

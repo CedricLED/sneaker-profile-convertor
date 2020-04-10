@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.*?>
+<VBox alignment="CENTER" prefHeight="223.0" prefWidth="450" stylesheets="@Login.css"
+      xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.profileconverter.loginController">
+    <children>
+        <HBox alignment="BOTTOM_RIGHT" prefHeight="16.0" prefWidth="450.0">
+            <children>
+                <JFXButton fx:id="minimizeApplication" mnemonicParsing="false" onAction="#minimizeApplication" text="">
+                    <padding>
+                        <Insets left="5.0" right="5.0" top="15.0"/>
+                    </padding>
+                    <HBox.margin>
+                        <Insets right="3.0"/>
+                    </HBox.margin>
+                </JFXButton>
+                <JFXButton fx:id="closeApplication" mnemonicParsing="false" onAction="#closeApplication" text="">
+                    <HBox.margin>
+                        <Insets right="10.0" top="10.0"/>
+                    </HBox.margin>
+                </JFXButton>
+            </children>
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+        </HBox>
+        <HBox prefHeight="218.0" prefWidth="450.0">
+            <children>
+                <VBox alignment="CENTER" prefWidth="450.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <Label fx:id="toolsifyLabel" text="TEST">
+                            <VBox.margin>
+                                <Insets/>
+                            </VBox.margin>
+                        </Label>
+                        <Label fx:id="helpLabel" text="Welcome back, please enter your license">
+                            <VBox.margin>
+                                <Insets bottom="10.0"/>
+                            </VBox.margin>
+                        </Label>
+                        <TextField fx:id="licenseKeyTextField" alignment="CENTER" promptText="Key">
+                            <VBox.margin>
+                                <Insets left="40.0" right="30.0"/>
+                            </VBox.margin>
+                        </TextField>
+                        <JFXButton fx:id="loginButton" alignment="CENTER" defaultButton="true" mnemonicParsing="false"
+                                   onAction="#authenticateKey" prefHeight="35.0" prefWidth="128.0" text="Activate">
+                            <VBox.margin>
+                                <Insets bottom="20.0" top="10.0"/>
+                            </VBox.margin>
+                        </JFXButton>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</VBox>

@@ -1,0 +1,57 @@
+.label {
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+}
+
+#options {
+    -fx-padding: 12px 150px 0px 150px;
+    -fx-border-insets: 8px;
+    -fx-background-insets: 8px;
+}
+
+.jfx-combo-box {
+    -fx-padding: 8px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+}
+
+.jfx-text-field {
+    -fx-padding: 8px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+}
+
+#information {
+    -fx-padding: 10px;
+    -fx-border-insets: 8px;
+    -fx-background-insets: 8px;
+    -fx-background-color: #676771;
+    -fx-background-radius: 20px;
+}
+
+#create {
+    -fx-text-fill: white;
+    -fx-background-color: #1bd003 to #12de25;
+    -fx-padding: 12px;
+    -fx-background-radius: 5px;
+    -fx-border-insets: 8px;
+    -fx-background-insets: 8px;
+}
+
+#copy {
+    -fx-text-fill: white;
+    -fx-background-color: #9004f2 to #7806c0;
+    -fx-padding: 12px;
+    -fx-background-radius: 8px;
+    -fx-border-insets: 8px;
+    -fx-background-insets: 8px;
+}
+
+#clear {
+    -fx-text-fill: white;
+    -fx-background-color: #f20463 to #de1243;
+    -fx-padding: 12px;
+    -fx-background-radius: 8px;
+    -fx-border-insets: 8px;
+    -fx-background-insets: 8px;
+}

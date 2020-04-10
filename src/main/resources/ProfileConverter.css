@@ -1,0 +1,21 @@
+* {
+    -fx-primary: #151320;
+    -fx-secondary: #f20463;
+    -fx-primarytext: #FFFFFF;
+    -fx-primarytextgrey: #676771;
+}
+
+#importButton, #exportButton {
+    -fx-background-color: -fx-primary;
+    -fx-background-radius: 8,7,6;
+    -fx-border-width: 3;
+    -fx-border-color: -fx-secondary;
+    -fx-border-radius: 8;
+    -fx-text-fill: -fx-primarytext;
+}
+
+#profileConverterLabel {
+    -fx-text-fill: -fx-primarytext;
+    -fx-font-size: 16px;
+
+}

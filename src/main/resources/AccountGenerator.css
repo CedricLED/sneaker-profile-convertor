@@ -1,0 +1,13 @@
+.label {
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+}
+
+.jfx-button {
+    -fx-text-fill: white;
+    -fx-background-color: #f20463 to #de1243;
+    -fx-padding: 12px;
+    -fx-background-radius: 8px;
+    -fx-border-insets: 8px;
+    -fx-background-insets: 8px;
+}
